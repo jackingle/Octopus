@@ -43,4 +43,8 @@ func GetStock(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 	fmt.Printf("%s", body)
+	_, err = w.Write(body)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
