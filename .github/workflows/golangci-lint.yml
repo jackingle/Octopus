@@ -1,13 +1,13 @@
 name: golangci-lint
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - v*
-    branches:
-      - master
-      - main
-  pull_request:
+#   push:
+#     tags:
+#       - v*
+#     branches:
+#       - master
+#       - main
+#   pull_request:
 jobs:
   golangci:
     name: lint
